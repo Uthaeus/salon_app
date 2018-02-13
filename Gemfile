@@ -49,3 +49,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'asl_view_tool', git: 'https://github.com/Uthaeus/asl_view_tool'
+gem 'bootstrap', '~> 4.0.0.beta2'
+
+
+
+
+
