@@ -41,6 +41,13 @@
           <input type="text" placeholder="Search" class="search-query span2">
         </form> -->
         <ul class="nav pull-right">
+          <% if current_user %>
+            <li><%= link_to 'Logout', destroy_user_session_path, method: :destroy %></li>
+            <li><%= link_to 'Edit Profile', edit_user_registration_path(current_user) %></li>
+          <% else %>
+            <li><%= link_to 'Login', new_user_session_path %></li>
+            <li><%= link_to 'Sign up', new_user_registration_path %></li>
+          <% end %>
           <li><%= link_to 'Products', products_path %></li>
           <li class="divider-vertical"></li>
           <li class="dropdown">

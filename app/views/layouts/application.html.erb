@@ -14,8 +14,15 @@
 
     <%= render partial: 'shared/nav' %>
 
-    <%= yield %>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <%= yield %>
 
-    <%= render partial: 'shared/application_footer' %>
+          <%= render partial: 'shared/application_footer' %>
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>
