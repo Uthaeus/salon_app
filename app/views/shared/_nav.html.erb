@@ -6,45 +6,45 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a href="#" class="brand">Project name</a>
+      <a href="#" class="brand">ASL Salon</a>
       <div class="nav-collapse">
         <ul class="nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
+          <li class="active"><%= link_to 'Home', root_path %></li>
+          <li><%= link_to 'Contact', pages_contact_path %></li>
+          <li><%= link_to 'Lash Care', pages_lashcare_path %></li>
+          <li><%= link_to 'FAQs', pages_faqs_path %></li>
           <li class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <b class="caret"></b></a>
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Services & Pricing <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
-                <a href="#">2-level Dropdown <i class="icon-arrow-right"></i></a>
+                <a href="#">Hair Services <i class="icon-arrow-right"></i></a>
                 <ul class="dropdown-menu sub-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Cut</a></li>
+                  <li><a href="#">Color</a></li>
+                  <li><a href="#">Wax</a></li>
                   <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
+                  <li class="nav-header">Eyebrows</li>
+                  <li><a href="#">Color</a></li>
+                  <li><a href="#">Wax</a></li>
                 </ul>
               </li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#">Nails</a></li>
+              <li><a href="#">Waxing</a></li>
               <li class="divider"></li>
-              <li class="nav-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
+              <li class="nav-header">Lashes</li>
+              <li><a href="#">Full Set</a></li>
+              <li><a href="#">Fill</a></li>
             </ul>
           </li>
         </ul>
-        <form action="" class="navbar-search pull-left">
+        <!-- <form action="" class="navbar-search pull-left">
           <input type="text" placeholder="Search" class="search-query span2">
-        </form>
+        </form> -->
         <ul class="nav pull-right">
-          <li><a href="#">Link</a></li>
+          <li><%= link_to 'Products', products_path %></li>
           <li class="divider-vertical"></li>
           <li class="dropdown">
-            <a class="#" href="#">Menu</a>
+            <%= link_to 'aslsalon@gmail.com', root_path %>
           </li>
         </ul>
       </div>

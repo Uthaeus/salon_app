@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" />
     <title>SalonApp</title>
     <%= csrf_meta_tags %>
@@ -14,5 +15,7 @@
     <%= render partial: 'shared/nav' %>
 
     <%= yield %>
+
+    <%= render partial: 'shared/application_footer' %>
   </body>
 </html>
