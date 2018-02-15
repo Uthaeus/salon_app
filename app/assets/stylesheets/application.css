@@ -8,6 +8,7 @@ body {
     padding-top: 60px;
     padding-bottom: 40px;
     background: url('pexels-photo-592798.jpeg') no-repeat center center fixed;
+    margin: 15px;
   }
   
   .sidebar-nav {
@@ -60,8 +61,66 @@ body {
     bottom: 0;
   }
 
+.mynav {
+  color: blue;
+}
 
+.content {
+  margin: 0 auto;
+  width: 960px;
+}
 
+.blurb-container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.blurb {
+  font-family: "Goudy Bookletter 1911";
+  font-size: 30px;
+  text-align: left;
+  margin: 50px auto;
+}
+
+#slidePricing {
+  padding: -5px 100px 100px 100px;
+  overflow: visible;
+  height: inherit;
+}
+
+.panel {
+  border: 1px solid grey;
+  margin: 20px;
+  padding: 30px;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.price-type {
+  font-family: "Wellfleet";
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.panel>p {
+  font-family: "Goudy Bookletter 1911";
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.price {
+  font-family: "Wellfleet";
+  font-size: 16px;
+  font-weight: bold;
+} 
+
+ul {
+  list-style-type: none;
+}
 
 
 

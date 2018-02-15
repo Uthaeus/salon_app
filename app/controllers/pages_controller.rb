@@ -8,6 +8,9 @@ class PagesController < ApplicationController
   def faqs
   end
 
+  def lashes
+  end
+
   def lashcare
   end
 

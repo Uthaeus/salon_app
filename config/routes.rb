@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get 'pages/faqs'
 
+  get 'pages/lashes'
+
   get 'pages/lashcare'
 
   get 'pages/services'
