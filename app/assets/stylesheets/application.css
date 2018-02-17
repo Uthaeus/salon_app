@@ -97,18 +97,19 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  font-size: 1.6em;
 }
 
 .price-type {
   font-family: "Wellfleet";
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   margin-top: 0;
 }
 
 .panel>p {
   font-family: "Goudy Bookletter 1911";
-  font-size: 18px;
+  font-size: 20px;
   font-weight: normal;
 }
 
@@ -120,6 +121,29 @@ body {
 
 ul {
   list-style-type: none;
+}
+
+.logo-container {
+  position: fixed;
+  opacity: .3;
+  margin-left: 15px;
+  margin-top: -10px;
+}
+
+#app-logo {
+  border-radius: 50%;
+}
+
+#image2 {
+  margin-left: 60%;
+}
+
+.hair-image2 {
+
+}
+
+#image3 {
+  align-items: center;
 }
 
 
