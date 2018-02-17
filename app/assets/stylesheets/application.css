@@ -130,23 +130,58 @@ ul {
   margin-top: -10px;
 }
 
+.myimage {
+  border-radius: 4px;
+}
+
 #app-logo {
   border-radius: 50%;
 }
 
 #image2 {
-  margin-left: 60%;
+  margin-left: 68%;
 }
 
 .hair-image2 {
 
 }
 
+#top-image {
+  margin-left: -15%;
+}
+
 #image3 {
   align-items: center;
 }
 
+#image4-b {
+  float: right;
+}
 
+#image5 {
+  margin-left: 35%;
+}
+
+#image6 {
+  margin-left: 15%;
+}
+
+#image6-b {
+  float: right;
+  margin-right: 15%;
+}
+
+#image8 {
+  margin-left: 58%;
+}
+
+#lash-image1 {
+  margin-left: 70%;
+}
+
+#lash-image3 {
+  margin-left: 70%;
+}
 
 
 
