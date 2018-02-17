@@ -1,29 +1,30 @@
 <div class='container'>
   <h1>Products</h1>
 
+  
   <div class='product-index'>
-    <div class='row'>
-      <% @products.each do |product| %>
+    <% @products.each do |product| %>
+      <div class='row'>
+        <div class="product-item" style="background-image: url(<%= product.image%>)">
         
-        <div class='col-md-4'>
-          
-          <p><%= link_to "#{product.title}", product %></p>
-          <p><%= product.brand %></p>
-          <p><%= "#{'$%.2f' % product.price}" %></p>
-          <p><%= link_to 'Show', product %></p>
-          
-        </div>
+          <div class="prod-title">
+            <p><%= link_to "#{product.title}", product %></p>
+          </div>
 
-        <div class='col-md-8'>
-          
-          <%= image_tag product.image, width: '10%' %>
-          
+          <div class="prod-brand">
+            <p><%= product.brand %></p>
+          </div>
+
+          <div class="prod-price">
+            <p><%= "#{'$%.2f' % product.price}" %></p>
+          </div>
+       
         </div>
-        
-      <% end %>
-    </div>
+      </div>
+    <% end %>
   </div>
+  
+
   <%= link_to 'New Product', new_product_path, class: 'btn btn-primary' %>
 </div>
-
 
