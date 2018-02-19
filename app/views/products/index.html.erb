@@ -5,7 +5,7 @@
   <div class='product-index'>
     <% @products.each do |product| %>
       <div class='row'>
-        <div class="product-item" style="background-image: url(<%= product.image%>)">
+        <div class="product-item" style="background-image: url(<%= product.image %>)">
         
           <div class="prod-title">
             <p><%= link_to "#{product.title}", product %></p>
@@ -24,7 +24,9 @@
     <% end %>
   </div>
   
+  <% if logged_in?(:admin) %>
+    <%= link_to 'New Product', new_product_path, class: 'btn btn-primary' %>
+  <% end %>
 
-  <%= link_to 'New Product', new_product_path, class: 'btn btn-primary' %>
 </div>
 

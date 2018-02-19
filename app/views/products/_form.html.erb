@@ -11,24 +11,25 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :title %>
     <%= form.text_field :title, id: :product_title %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :brand %>
     <%= form.text_field :brand, id: :product_brand %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :price %>
     <%= form.text_field :price, id: :product_price %>
   </div>
 
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.text_area :image, id: :product_image %>
+  <div class="form-group">
+    <label class="btn btn-primary">
+      Upload an image file <%= form.file_field :image, id: :product_image, style: 'display:none;' %>
+    </label>
   </div>
 
   <div class="actions">

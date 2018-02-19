@@ -24,7 +24,7 @@ puts "1 Admin User created"
     title: "Great Product #{product}",
     brand: "Awesome Brand",
     price: 25.00,
-    image: "http://via.placeholder.com/150x200"
+    image: "products.jpeg"
   )
 end
 
