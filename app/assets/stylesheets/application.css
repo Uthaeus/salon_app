@@ -65,6 +65,7 @@ body {
   .mastfoot {
     position: fixed;
     bottom: 0;
+    margin-left: 40%;
   }
 
 .mynav {
