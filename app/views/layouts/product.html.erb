@@ -16,12 +16,13 @@
 
     <%= render partial: 'shared/logo' %>
 
-    
+    <div class="container">
+      
 
+      <%= yield %>
 
-    <%= yield %>
-
-    <%= render partial: 'shared/application_footer' %>
+      <%= render partial: 'shared/application_footer' %>
         
+    </div>
   </body>
 </html>
