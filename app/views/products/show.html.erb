@@ -1,23 +1,22 @@
-<div class='container product-container'>
-  <div class='row'>
-    <div class='col-md-7'>
-      <% if @product.image? %>
-        <%= image_tag @product.image, width: '100%' %>
-      <% else %>
-        <%= image_tag image_generator, width: '100%' %>
-      <% end %>
-    </div>
-
-    <div class="col-md-5">
-      <h1><%= @product.brand %></h1>
-
-      <hr>
-
-      <em><%= @product.title %></em>
-
-      <h4><%= @product.price %></h4>
-    </div>
+<div class='ind-container'>
+  <div class='col-md-7'>
+    <% if @product.image? %>
+      <%= image_tag @product.image, width: '100%' %>
+    <% else %>
+      <%= image_tag image_generator, width: '100%' %>
+    <% end %>
   </div>
+
+  <div class="col-md-5">
+    <h1><%= @product.brand %></h1>
+
+    <hr>
+
+    <em><%= @product.title %></em>
+
+    <h4><%= @product.price %></h4>
+  </div>
+  
 </div>
 
 
