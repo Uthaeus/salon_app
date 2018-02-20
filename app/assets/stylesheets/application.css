@@ -65,7 +65,7 @@ body {
   .mastfoot {
     position: fixed;
     bottom: 0;
-    margin-left: 40%;
+    margin-left: 35%;
   }
 
 .mynav {
@@ -132,9 +132,10 @@ ul {
 
 .logo-container {
   position: fixed;
+  bottom: 0;
   opacity: .3;
   margin-left: 15px;
-  margin-top: -10px;
+  margin-bottom: 15px;
 }
 
 .myimage {
