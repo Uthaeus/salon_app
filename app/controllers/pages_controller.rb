@@ -16,4 +16,8 @@ class PagesController < ApplicationController
 
   def services
   end
+
+  def appointments
+    
+  end
 end
