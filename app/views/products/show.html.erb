@@ -1,7 +1,11 @@
 <div class='container product-container'>
   <div class='row'>
     <div class='col-md-7'>
-      <%= image_tag product_img(@product.image), width: '100%' %>
+      <% if @product.image? %>
+        <%= image_tag @product.image, width: '100%' %>
+      <% else %>
+        <%= image_tag image_generator, width: '100%' %>
+      <% end %>
     </div>
 
     <div class="col-md-5">
