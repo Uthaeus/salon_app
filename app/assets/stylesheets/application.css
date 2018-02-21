@@ -4,6 +4,11 @@
 *= require_tree .
 *= require_self
 */
+
+.modal {
+  margin-left: 20%;
+}
+
 html,
 body {
   font-family: 'Vidaloka', serif;
