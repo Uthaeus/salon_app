@@ -16,9 +16,10 @@ body {
 
 
 body {
-  background: #005AA7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #FFEEEE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }
 
@@ -110,27 +111,28 @@ body {
   background-size: cover;
   margin-top: 15px;
   margin-bottom: 15px;
+  border-radius: 3px;
 }
 
 .prod-title {
   padding: 10px;
   float: right;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .prod-title a {
-  color: green;
+  color: #680303;
   text-decoration: none;
 }
 
 .prod-title a:hover {
-  color: purple;
+  color: #3a0303;
 }
 
 .prod-brand {
   padding: 20px;
-  font-size: 3em;
-  color: pink;
+  font-size: 5em;
+  color: #680303;
 }
 
 .prod-price {
@@ -143,4 +145,9 @@ body {
 .links {
   padding: 20px;
   float: right;
+}
+
+.new-prod-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
