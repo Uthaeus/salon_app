@@ -5,6 +5,10 @@
 *= require_self
 */
 
+.jumbotron {
+  background: none;
+}
+
 .modal {
   margin-left: 20%;
   height: 435px;
@@ -116,6 +120,7 @@ body {
   justify-content: center;
   text-align: center;
   font-size: 1.6em;
+  background: none;
 }
 
 .price-type {
