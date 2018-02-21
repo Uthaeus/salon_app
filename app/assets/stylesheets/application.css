@@ -1,4 +1,9 @@
-
+/*
+*= require fullcalendar
+*= require daterangepicker
+*= require_tree .
+*= require_self
+*/
 html,
 body {
   font-family: 'Vidaloka', serif;

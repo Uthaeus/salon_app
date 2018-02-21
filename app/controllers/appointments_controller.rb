@@ -1,4 +1,5 @@
 class AppointmentsController < ApplicationController
+  layout 'appointment'
 
   def home
 

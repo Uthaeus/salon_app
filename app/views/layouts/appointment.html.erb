@@ -5,8 +5,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" />
     <title>SalonApp</title>
     <%= csrf_meta_tags %>
-
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag ‘dhtmlxscheduler’, media: ‘all’, ‘data-turbolinks-track’ => true %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>   
     <%= javascript_include_tag ‘dhtmlxscheduler’, ‘data-turbolinks-track’ => true %>
     
   </head>
@@ -17,17 +19,12 @@
 
     <%= render partial: 'shared/logo' %>
 
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
+    
 
 
-          <%= yield %>
+    <%= yield %>
 
-          <%= render partial: 'shared/application_footer' %>
-        </div>
-      </div>
-
-    </div>
+    <%= render partial: 'shared/application_footer' %>
+       
   </body>
 </html>
