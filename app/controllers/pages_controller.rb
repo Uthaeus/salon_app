@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @tweets = SocialTool.twitter_search
   end
 
   def contact

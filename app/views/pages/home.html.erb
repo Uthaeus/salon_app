@@ -1,11 +1,30 @@
-<div class='home-title'>
-  <div class="inner cover front-items">
-    <h1 class="cover-heading">ASL Salon</h1>
-    <div class="lead lead-items">
-      <p>Feeling Beautiful</p>
-      <p>Nothing Better</p>
+
+<div class='row'>
+  <div class='col-md-8'>
+    <div class='home-title'>
+      <div class="inner cover front-items">
+        <h1 class="cover-heading">ASL Salon</h1>
+        <div class="lead lead-items">
+          <p>Feeling Beautiful</p>
+          <p>Nothing Better</p>
+        </div>
+        
+      </div>
+
     </div>
-    
+  </div>
+
+  <div class='col-md-4'>
+
+    <div class='tweet-content'>
+      <div class='panel-container'>
+        <% @tweets.each do |tweet| %>
+          <div class='panel'>
+            <%= tweet %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
 

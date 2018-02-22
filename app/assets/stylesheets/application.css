@@ -87,6 +87,13 @@ body {
   color: blue;
 }
 
+.tweet-content {
+  margin: 0 auto;
+  width: 460px;
+  position: absolute;
+  right: 0;
+}
+
 .content {
   margin: 0 auto;
   width: 960px;
@@ -235,10 +242,10 @@ ul {
 }
 
 .home-title {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-top: 250px;
+  margin-left: 40%;
+  width: 200px;
+  position: fixed;
 }
 
 .lead-items {
