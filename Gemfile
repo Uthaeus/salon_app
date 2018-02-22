@@ -65,4 +65,4 @@ gem 'simple_form', '~> 3.5', '>= 3.5.1'
 gem 'twilio-ruby', '~> 5.6', '>= 5.6.3'
 gem 'twitter', '~> 6.2'
 
-
+ruby "2.4.1"
