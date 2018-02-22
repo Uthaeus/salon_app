@@ -225,10 +225,19 @@ ul {
   padding: 10px;
 }
 
+.cover-heading {
+  font-size: 4em;
+  margin-left: -40px;
+}
+
+.front-items {
+  width: 400px;
+}
+
 .con-add {
   width: 45%;
   padding: 30px;
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 .con-map {
