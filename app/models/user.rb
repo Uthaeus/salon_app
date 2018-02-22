@@ -15,7 +15,7 @@ class User < ApplicationRecord
 
   validates_presence_of :name
 
-  # has_many :appointments
-  # has_many :events, :through => :appointments
+  has_many :appointments
+  has_many :events, :through => :appointments
   
 end
