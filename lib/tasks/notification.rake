@@ -1,6 +1,13 @@
 namespace :notification do
   desc "Sends SMS notification to clients reminding them of upcoming appointments"
   task sms: :environment do
+
+    users = User.all 
+    notification_message = "Just a reminder of your scheduled appointment for tomorrow"
+
+    users.each do |client|
+      SmsTool.send_sms(number: client.phone_number, message: notification_message)
+    end
     # Iterate over all clients
     # Schedule to run one day before appointment 
     # Send a message with reminder and link to calendar
@@ -12,6 +19,15 @@ namespace :notification do
     # No spaces or dashes
     # exactly 10 characters
     # all characters have to be a number
+  end
+
+  desc "Sends mail notification to managers each day as a reminder to check appointment calendar"
+  task sms: :environment do
+    admin_users = AdminUser.all 
+
+    admin_users.each do |admin|
+      ManagerMailer.email(admin).deliver_later
+    end
   end
 
 end
