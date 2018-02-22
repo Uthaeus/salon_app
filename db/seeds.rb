@@ -4,7 +4,8 @@ User.create!(
   name: "Homer",
   password: "asdfasdf",
   password_confirmation: "asdfasdf",
-  roles: "user"
+  roles: "user",
+  phone_number: "5555555555"
 )
 
 puts "1 User created"
@@ -14,7 +15,8 @@ User.create!(
   name: "Admin",
   password: "asdfasdf",
   password_confirmation: "asdfasdf",
-  roles: "admin"
+  roles: "admin",
+  phone_number: "8015604312"
 )
 
 puts "1 Admin User created"
