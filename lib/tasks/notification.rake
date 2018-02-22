@@ -6,7 +6,9 @@ namespace :notification do
     notification_message = "Just a reminder of your scheduled appointment for tomorrow"
 
     users.each do |client|
-      SmsTool.send_sms(number: client.phone_number, message: notification_message)
+      if Time.now == client.appointment.start - 1.day
+        SmsTool.send_sms(number: client.phone_number, message: notification_message)
+      end
     end
     # Iterate over all clients
     # Schedule to run one day before appointment 
