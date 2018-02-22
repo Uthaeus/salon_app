@@ -63,6 +63,6 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'fullcalendar-rails', '~> 3.4'
 gem 'simple_form', '~> 3.5', '>= 3.5.1'
 gem 'twilio-ruby', '~> 5.6', '>= 5.6.3'
-
+gem 'twitter', '~> 6.2'
 
 
