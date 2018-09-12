@@ -42,7 +42,7 @@
           <input type="text" placeholder="Search" class="search-query span2">
         </form> -->
         <ul class="nav pull-right">
-          <% if current_user %>
+          <% if user_signed_in? && current_user.name != 'guest' %>
             <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
             <li><%= link_to 'Edit Profile', edit_user_registration_path(current_user) %></li>
           <% else %>
